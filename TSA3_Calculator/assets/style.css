@@ -1,0 +1,174 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Cascadia Code', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(320deg, #000000, #383838, #060606);
+    animation: gradientAnimation 10s infinite linear;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background-color: #000000;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #ffef78;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 18px;
+    box-shadow: 
+        0 0 10px 5px transparent, 
+        0 0 20px 10px transparent, 
+        0 0 30px 15px transparent, 
+        0 0 40px 20px transparent;
+    animation: crawlingAnimation 3s infinite linear;
+}
+
+@keyframes crawlingAnimation {
+    0% {
+        box-shadow: 
+            0 0 10px 5px rgb(235, 0, 0), 
+            0 0 20px 10px transparent, 
+            0 0 30px 15px transparent, 
+            0 0 40px 20px transparent;
+    }
+    25% {
+        box-shadow: 
+            0 0 10px 5px transparent, 
+            0 0 20px 10px rgb(30, 183, 0), 
+            0 0 30px 15px transparent, 
+            0 0 40px 20px transparent;
+    }
+    50% {
+        box-shadow: 
+            0 0 10px 5px transparent, 
+            0 0 20px 10px transparent, 
+            0 0 30px 15px rgb(0, 21, 255), 
+            0 0 40px 20px transparent;
+    }
+    75% {
+        box-shadow: 
+            0 0 10px 5px transparent, 
+            0 0 20px 10px transparent, 
+            0 0 30px 15px transparent, 
+            0 0 40px 20px rgb(255, 0, 166);
+    }
+    100% {
+        box-shadow: 
+            0 0 10px 5px rgb(0, 0, 0), 
+            0 0 20px 10px transparent, 
+            0 0 30px 15px transparent, 
+            0 0 40px 20px transparent;
+    }
+}
