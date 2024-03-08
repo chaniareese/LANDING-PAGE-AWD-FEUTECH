@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(107, 84, 190), rgb(80, 0, 106));
+    position: relative;
+
+    .word {
+        font-family: "Bebas Neue", sans-serif;
+        color: whitesmoke;
+        font-size: 8rem;
+        cursor: none;
+        letter-spacing: 8px;
+    }
+}
+
+    .illumination {
+        width: 160%;
+        height: 160%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background: radial-gradient(
+            circle at var(--x) var(--y),
+            transparent -10%,
+            rgb(24, 0, 53) 25%
+        );
+            
+    }
