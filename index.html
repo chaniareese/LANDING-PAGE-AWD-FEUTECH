@@ -1,130 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <script src="assets/script.js" defer></script>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSQCEQZ6VV"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title>Landing Page | Chania Roque</title>
+	<link rel="icon" type="pic/png" href="assets/img/icon.png">
+<!--
+Raleway Template 
+http://www.templatemo.com/preview/templatemo_421_raleway
+-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/simple-line-icons.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LCJkbfYFZcEOOU1PFFStSdKkLO1ik9EBO1WEmA6tt1MZ/f1HXGtiXHp7I1N5vW2ZqszHjh8r6+dfwnu5ha0Ogw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSQCEQZ6VV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-CSQCEQZ6VV');
+	</script>
+</head>
+<body>
+	<header class="site-header container animated fadeInDown">
+		<div class="header-wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-branding">
+						<a href="#"><h1>CHANIA ROQUE</h1></a>
+					</div>
+				</div>
+				<a href="#" class="toggle-nav hidden-md hidden-lg">
+					<i class="fa fa-bars" style="color: #46494f;"></i>
+				</a>
+				<div class="col-md-8">
+					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+						<ul class="main-menu">
+							<li><a class="show-1 active homebutton" href="#">Home</a></li>
+							<li><a class="show-2 aboutbutton" href="#">Profile</a></li>
+							<li><a class="show-3 projectbutton" href="#">Projects</a></li>
+						</ul>
+					</nav>
+					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
+						<ul class="main-menu">
+							<li><a class="show-1 active homebutton" href="#">Home</a></li>
+							<li><a class="show-2 aboutbutton" href="#">Profile</a></li>
+							<li><a class="show-3 projectbutton" href="#">Projects</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="menu-container">
+		<div id="menu-1" class="homepage home-section container">
+			<div class="home-intro text-center">
+				<h2 class="welcome-title animated fadeInLeft">Hello! they call me Chania.</h2>
+				<p class="animated fadeInRight">I<span class="blue"> design </span>and<span class="green"> develop</span> things for the web.</p>
+			</div>
+			<div class="home-intro text-center">
+				<img src="assets/img/icon.png" alt="Image Description">
+			</div>
+		</div>
 
-    gtag('config', 'G-CSQCEQZ6VV');
-    </script>
-  </head>
-  <body>
-    <section class="hero">
-      <img
-        id="toggleTheme"
-        class="theme-btn"
-        src="assets/theme_light.png"
-        alt="theme icon"
-      />
-      <div class="hero-pic">
-        <div class="inner-circle"></div>
-        <img
-          src="assets/icon.png"
-          alt="Chania Reese Roque"
-        />
-      </div>
-      <div class="hero-info">
-        <h1>Chania Reese Roque</h1>
-        <h2>BSIT-WMA Undergraduate</h2>
-        <div class="logo-container">
-          <a href="https://github.com/"
-            ><img src="assets/github_light.png" alt="github logo"
-          /></a>
-          <a href="https://linkedin.com/"
-            ><img src="assets/linkedin_light.png" alt="linkedin logo"
-          /></a>
-          <a href="mailto:abc@gmail.com"
-            ><img src="assets/email_light.png" alt="email logo"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <section class="experience">
-      <h2><b>3</b><br />Years<br />Frontend</h2>
-      <h2><b>5</b><br />Years<br />B.Sc. & M.Sc.</h2>
-      <h2><b>4</b><br />Satisfied<br />Employers</h2>
-    </section>
-    <section class="cta">
-      <a href="assets/example-cv.pdf" download>
-        <button class="btn download-btn">Download Resume</button>
-      </a>
-      <a href="mailto:abc@gmail.com"
-        ><button class="btn contact-btn">Contact Me</button></a
-      >
-    </section>
-    <section class="portfolio-skills">
-      <div class="btn-bg">
-        <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
-        <button class="btn-2" id="skills-btn">Skills</button>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <div class="wrapper project-wrapper">
-        <a href="https://github.com/"
-          ><img src="assets/project-1.png" alt="Project 1"
-        /></a>
-      </div>
-      <div class="wrapper project-wrapper">
-        <a href="https://github.com/"
-          ><img src="assets/project-2.png" alt="Project 2"
-        /></a>
-      </div>
-      <div class="wrapper project-wrapper">
-        <a href="https://github.com/"
-          ><img src="assets/project-3.png" alt="Project 3"
-        /></a>
-      </div>
-      <div class="wrapper project-wrapper">
-        <a href="https://github.com/"
-          ><img src="assets/project-4.png" alt="Project 4"
-        /></a>
-      </div>
-    </section>
-    <section class="skills" id="skills">
-      <div class="wrapper">
-        <h3>Frontend</h3>
-        <article class="frontend-skills">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>SASS</p>
-          <p>LESS</p>
-          <p>JavaScript</p>
-          <p>TypeScript</p>
-          <p>React</p>
-          <p>Angular</p>
-          <p>Material UI</p>
-        </article>
-      </div>
-      <div class="wrapper">
-        <h3>Backend</h3>
-        <article class="backend-skills">
-          <p>Node.js</p>
-          <p>Express.js</p>
-          <p>APIs</p>
-          <p>Database CRUD</p>
-          <p>Git</p>
-          <p>GraphQL</p>
-          <p>Web Servers</p>
-        </article>
-      </div>
-    </section>
-    <footer>
-      <p>&copy Chania Roque 2024</p>
-    </footer>
-  </body>
+		<div id="menu-2" class="content about-section container">
+			<div class="our-story">
+				<div class="story-bg animated fadeIn"></div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="inner-story animated fadeInRight text-center">
+							<h2>ABOUT</h2>
+							<p>Chania is a design enthusiast, born and raised in the Philippines. She is currently a student pursuing a 
+								degree in BS Information Technology with a specialization in Web and Mobile Applications. Chania is particularly 
+								focused on the visual and aesthetic aspects of digital design, aiming to create user-friendly and visually 
+								appealing interfaces with aspirations to work as a front-end developer in the future.</p>
+								<button onclick="window.location.href='TSA1_Resume'" class="btn">View Resume</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+
+		<div id="menu-3" class="content project-section container">
+			<div class="projects-header">
+				<h2 class="animated fadeInRight">Current Projects</h2>
+				<p class="animated fadeInLeft">Featuring here is a collection of projects from my current 
+					coursework, completed both independently and in tandem with my exceptional team.</p>
+			</div>
+
+			<div class="projects-holder">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+						<div class="project-item animated umScaleIn">
+							<img src="assets/img/1.png" alt="">
+							<div class="overlay">
+								<h4><a href="1BGAnimation" target="_blank">Background Animation</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="assets/img/2.png" alt="">
+							<div class="overlay">
+								<h4><a href="2NotificationBell" target="_blank">Notification Bell</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-6 animated umScaleIn">
+							<img src="assets/img/3.png" alt="">
+							<div class="overlay">
+								<h4><a href="3JumpingLetters" target="_blank">Jumping Letters</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-7 animated umScaleIn">
+							<img src="assets/img/4.png" alt="">
+							<div class="overlay">
+								<h4><a href="4Illuminate" target="_blank">Illuminate</a></h4>
+							</div>
+						</div>
+					</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/5.png" alt="">
+							<div class="overlay">
+								<h4><a href="5Search" target="_blank">Search Bar</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/6.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA1_Resume" target="_blank">Personal Resume</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/7.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA2_Days" target="_blank">Days in a Week</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+						<div class="project-item animated umScaleIn">
+							<img src="assets/img/8.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA3_Calculator" target="_blank">Calculator</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="assets/img/9.png" alt="">
+							<div class="overlay">
+								<h4><a href="MidtermProject_Animation" target="_blank">Animation Project</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-6 animated umScaleIn">
+							<img src="assets/img/10.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA4.1_ShopWebsite" target="_blank">Shop Website v1</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-7 animated umScaleIn">
+							<img src="assets/img/11.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA4.2_ShopWebsite" target="_blank">Shop Website v2</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/12.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA5" target="_blank">Ongoing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/13.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA6" target="_blank">Ongoing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+						<div class="project-item">
+							<img src="assets/img/14.png" alt="">
+							<div class="overlay">
+								<h4><a href="TSA7" target="_blank">Ongoing</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+		</div>
+		
+	<footer class="site-footer container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="main-footer">
+					<ul class="social">
+						<li><a href="https://github.com/chaniareese" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/chania-reese-roque-133770255" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:chania.roque@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 copyright">
+				<p> &copy; 2024 <a href="#">Chania Reese Roque | Educational Purpose Only.</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- templatemo 421 raleway -->
+
+	<span class="border-top"></span>
+	<span class="border-left"></span>
+	<span class="border-right"></span>
+	<span class="border-bottom"></span>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
 </html>
